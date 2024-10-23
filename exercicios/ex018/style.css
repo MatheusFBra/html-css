@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+p{
+    font: 5italic,bolder,1em, sans-serif ;
+}

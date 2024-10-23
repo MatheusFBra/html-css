@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>imagem flixível</h1>
+<p>Podemos ampliar ou diminuir o tamnho da imagem de acordo com o tamanho da tela do usuário, farei isso no exemplo a  seguir:</p>  
+
+<picture>
+    <source media="(max-width:150px)" srcset="img/academia-150.jpg" type="image/jpg">
+    <source media="(max-width:350px)" srcset="img/academia-250.jpg" type="image/jpg">
+    <source media="(max-width:750px)" srcset="img/academia-550.jpg" type="image/jpg">
+    <img src="img/academia-1050.jpg" alt="Logo academia">
+    </body>
+    </html>
+</picture>

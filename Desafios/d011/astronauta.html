@@ -5,45 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobreposição de Imagens</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+        section.fundo {
+            position: relative;
+            height: 100vh;
+            background-image: url('img/espaco.jpg');
+            background-size: cover;  /*Muda para cover para manter proporções e junto com o background position, vai manter a responsividade da imagem */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat;
+        }
 
-
-
-.container {
-    position: relative; /* Contexto de posicionamento */
-    width: 600px; /* Largura do contêiner */
-    height: 400px; /* Altura do contêiner */
-    overflow: hidden; /* Para evitar que a imagem sobreposta ultrapasse os limites */
-}
-
-.imagem-fundo {
-    width: 100%; /* Ocupa todo o contêiner */
-    height: auto; /* Mantém a proporção */
-    margin: auto;
-    display: block;
-    padding-right: 500px;
-}
-
-.imagem-sobreposta {
-    position: absolute; /* Permite a sobreposição */
-    top: 20%; /* Ajuste a posição vertical */
-    left: 20%; /* Ajuste a posição horizontal */
-    width: 150px; /* Largura da imagem sobreposta */
-    height: auto; /* Mantém a proporção */
-}
-
+        article.astronauta{
+            position:absolute;
+            width: 200px;
+            height:200px;
+            background-image: url('img/astronauta.png');
+            background-size: contain; /*Contain vai redimencionar o astronauta e fazer lo aparecer*/
+            background-position: center;
+            top:37%;
+            left: 37%;
+            
+        }
     </style>
-    
 </head>
 <body>
-    <div class="container">
-        <img src="img/espaco.jpg" alt="Imagem de Fundo" class="imagem-fundo">
-        <img src="img/astronauta.png" alt="Imagem Sobreposta" class="imagem-sobreposta">
-    </div>
+   <section class="fundo">
+       <article class="astronauta"></article>
+   </section>
 </body>
 </html>

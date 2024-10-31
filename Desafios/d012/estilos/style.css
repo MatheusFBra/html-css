@@ -33,16 +33,18 @@ header h1{
     color: white;
     background-size: cover;
     display: block;
-    font-size: 4.5em;
+    font-size: 9vw;
 }
 
 header p{
     font-family: var(--fonte-destaque);
     text-align: center;
     color: white;
+    font-size: 3vw;
 }
 
 article{
+
     font-family: var(--fonte-main);
     font-size: 3vw;
     padding-left: 40px;
@@ -55,12 +57,16 @@ article p{
     
 }
 
-div.pular-linha{
-    padding-bottom: 150px;
+.texto-imagem1{
+    background-image: url('../img/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px; 
 }
 
-p #texto-imagem1{
-    background-image: url('img/');
+
+div.pular-linha{
+    padding-bottom: 150px;
 }
 
 

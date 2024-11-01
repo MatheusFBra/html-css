@@ -40,30 +40,53 @@ header p{
     font-family: var(--fonte-destaque);
     text-align: center;
     color: white;
-    font-size: 3vw;
+    
 }
 
 article{
 
     font-family: var(--fonte-main);
     font-size: 3vw;
-    padding-left: 40px;
     margin-top: 10px;
     padding-top: 50px;
 }
 
 article p{
-    padding-top: 20px;
-    
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-bottom: 130px;
 }
 
-.texto-imagem1{
+
+#texto-imagem1{
     background-image: url('../img/background001.jpg');
+    position: relative;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    height: 30vw;
 }
 
+.estilo{
+    position: absolute;
+    color: white;
+    display: block;
+}
+
+#texto-imagem2{
+    background-image: url('../img/background002.jpg');
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 30vw;
+}
+   
+
+#espaco-linha{
+    padding-top:130px;
+}
+    
 
 div.pular-linha{
     padding-bottom: 150px;
@@ -77,13 +100,14 @@ footer{
     font-size: 1.3em;
     font-weight: 200;
     text-align:center;
+    align-items: center;
 }
 
 footer a{
     text-decoration: none;
     color: white;
     font-weight: normal;
-    background-color: burlywood;
+    background-color: rgb(151, 138, 122);
     background-size:1.3em;
 }
 

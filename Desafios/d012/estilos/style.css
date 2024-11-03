@@ -59,7 +59,7 @@ article p{
 
 
 #texto-imagem1{
-    background-image: url('../img/background001.jpg');
+    
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -67,11 +67,13 @@ article p{
     height: 30vw;
 }
 
-.estilo{
-    position: absolute;
+article > p.estilo{
+    background-color: black;
+    background-size: 200px;
     color: white;
-    display: block;
 }
+
+
 
 #texto-imagem2{
     background-image: url('../img/background002.jpg');

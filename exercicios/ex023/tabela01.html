@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body > h1{
+            text-align: center;
+        }
+        
+        table{
+            width: 300px; 
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        tr.linha{
+            background-color: rgba(0, 0, 0, 0.161);
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 6px;
+        }
+
+        td.destaque{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo a Lidar com Tabelas</h1>
+    <!--
+        Hierarquia de Tabelas Simples
+
+        Table - cria tabelas
+            Table rows/tr - Linhas de tabela
+                Table header - cabeçalho da tabela
+                    table data - dados de tabela
+
+    -->
+    <table>
+
+        <tr class="linha">
+            <td>A1</td>
+            <td class="destaque">B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="destaque">C2</td>
+        </tr>
+
+        <tr  class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td class="destaque">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td class="destaque">B5</td>
+            <td> </td>
+        </tr>
+
+
+    </table>
+
+    
+</body>
+</html>

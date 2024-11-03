@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando tabelas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kablammo&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+        
+        body{
+            font-family: "Passion One", serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 1.5em;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+
+        }
+        
+        td{
+            border: 1px solid black;
+        }
+
+        tr.alinhar{
+            text-align: right;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <H1> Alinhamento de Tabelas</H1>
+
+    <table>
+
+        <tr class="alinhar">
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        <tr class="alinhar">
+            <td>D1</td>
+            <td>D2</td>
+            <td>D3</td>
+        </tr>
+        
+        <tr>
+            <td>E1</td>
+            <td>E2</td>
+            <td>E3</td>
+        </tr>
+        
+        <tr class="alinhar">
+            <td>F1</td>
+            <td>F2</td>
+            <td>F3</td>
+        </tr>
+    </table>
+</body>
+</html>

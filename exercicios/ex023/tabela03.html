@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomia das Tabelas</title>
     <style>
+        
         body{
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        thead,tfoot{
+       h1{
+        text-align: center;
+       }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        } /*Esse comando deixa a tabela zebrada*/
+        /*odd deixa impar e even seleciona os pares*/
+
+       thead,tfoot{
             background-color: rgba(0, 0, 0, 0.567);
             color: white;
         }
@@ -22,6 +32,7 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            margin: auto;
         }
 
         tr{
@@ -31,6 +42,14 @@
 
         .num{
             text-align: center;
+        }
+
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgb(180, 150, 110);
+            color: white;
         }
     </style>
 </head>
